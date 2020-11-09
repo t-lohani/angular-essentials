@@ -340,7 +340,9 @@
 
   <!-- Resources -->
   <h2>Resources</h2>
-  <app-user></app-user>
+  <app-user [name]="nickname" (nameChanged)="onNicknameChanged($event)"></app-user>
+
+  <app-dashboard></app-dashboard>
 
   <p>Here are some links to help you get started:</p>
 
