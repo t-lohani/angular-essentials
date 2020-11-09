@@ -12,6 +12,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
     <p>Emitting events</p>
     <input type="text" (input)="onNicknameInput($event)" [value]="nickname">
     <p>Nickname {{ nickname }}</p>
+    <app-user-detail></app-user-detail>
   `
 })
 export class UserComponent {
